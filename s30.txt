@@ -1,0 +1,45 @@
+cachap
+ls 
+ls chap*
+  list all elements
+  ex:
+  -15IAX9:~/Desktop/scriptings$ ls chap*
+chap  chap01  chap02  chap04  chapx  chapy  chapz
+
+
+ls chap?
+list chap followed by single chracter
+ex :ls chap?
+chapx  chapy  chapz
+
+
+
+ls chap0[12]
+lists  chap followed by  foreach charcter from inside the bracket
+ex:
+ kishan@kishan-LOQ-15IAX9:~/Desktop/scriptings$ ls chap0[12]
+chap01  chap02
+
+
+ls chap0[!12]
+lists chap followed by 0 except chap with 01,02
+ex:
+kishan@kishan-LOQ-15IAX9:~/Desktop/scriptings$ ls chap0[12]
+chap01  chap02
+
+list commands 
+command which uses standard input
+command which uses standard output
+
+command which uses both standard output and standard input
+
+
+
+
+
+cat foo 2>>errfile
+  :redirects error if foo does not exist ,then redirects error to errfile
+  2-specifies standard error
+  
+  
+  
