@@ -1,0 +1,29 @@
+#!/bin/bash
+
+# Check if arguments are passed
+if [ $# -eq 0 ]; then
+  echo "Argument not found"
+  exit 1
+else
+  # Initialize the counter for arguments
+  i=$#
+  
+  # Initialize the temp variable to hold reversed arguments
+  temp=""
+  
+  # Loop through arguments in reverse order
+  while [ $i -gt 0 ]; do
+    # Get the i-th argument by indexing directly into $@
+    s="${!i}"
+    temp="$temp $s"
+    
+    # Decrement the counter
+    i=$((i - 1))
+  done
+  
+  # Output results
+  echo "Total number of arguments: $#"
+  echo "Argument list: $*"
+  echo "Reversed list: $temp"
+fi
+
